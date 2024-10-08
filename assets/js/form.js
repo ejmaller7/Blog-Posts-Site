@@ -27,7 +27,7 @@ function formSubmission(event) {
 }
 
 function redirectPage() {
-    window.location.href = '../blog.html'
+    window.location.href = 'blog.html'
 }
 
 // TODO: Add an event listener to the form on submit. Call the function to handle the form submission.
