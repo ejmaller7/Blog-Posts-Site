@@ -21,14 +21,11 @@ function formSubmission(event) {
         content: content,
     };
 
-    localStorage.setItem('formData', JSON.stringify(formData));
-
-    redirectPage();
+    storeLocalStorage('blogPosts', formData);
+//    localStorage.setItem('formData', JSON.stringify(formData));
+    redirectPage('blog.html');
 }
 
-function redirectPage() {
-    window.location.href = 'blog.html'
-}
 
 // TODO: Add an event listener to the form on submit. Call the function to handle the form submission.
 formEl.addEventListener('submit', formSubmission);
