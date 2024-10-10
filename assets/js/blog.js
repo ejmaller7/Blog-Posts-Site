@@ -13,6 +13,7 @@ function createAndAppendElement(tag, attributes, parent) {
 
 // TODO: Create a function that handles the case where there are no blog posts to display
 function showNoPostsMessage() {
+    const mainEl = document.querySelector('main');
     const message = document.createElement('p');
     message.textContent = "No blog posts yet...";
     mainEl.appendChild(message);

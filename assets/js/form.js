@@ -22,7 +22,6 @@ function formSubmission(event) {
     };
 
     storeLocalStorage('blogPosts', formData);
-//    localStorage.setItem('formData', JSON.stringify(formData));
     redirectPage('blog.html');
 }
 
